@@ -6,7 +6,6 @@ env:
     - REGISTRY_USER=staticlibot
 script:
   - docker build --tag staticli/simplehttp .
-  - docker run staticli/simplehttp
 
 after_script:
   - docker images
